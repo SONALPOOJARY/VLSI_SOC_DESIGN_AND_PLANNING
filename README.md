@@ -65,6 +65,6 @@
 | Klayout	Mask            |  layout editor and viewer       |  </a>
 
 
-![image](bts wallpaper desktop.jpeg)
+![bts wallpaper desktop.jpeg](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/bts%20wallpaper%20desktop.jpeg)
 
 
