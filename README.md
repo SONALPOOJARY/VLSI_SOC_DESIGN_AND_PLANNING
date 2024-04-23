@@ -1,9 +1,10 @@
 # VLSI_SOC_DESIGN_AND_PLANNING
 1. [Day 1:](#day1)
-  [Get Familiar with Open-Source EDA Tools](#11)
-  [Intro to OpenLane](#12)
-  [Directory Structure of Openlane](#13)
-  [Steps to characterize synthesis results](#14)
+•	[Get Familiar with Open-Source EDA Tools](#11).
+•	[Intro to OpenLane](#12).
+•	[Directory Structure of Openlane](#13)
+•	[Steps to characterize synthesis results](#14)
+
 
  2. [Day 2:](#day2)
   [Steps to run floorplan using OpenLANE](#21)
