@@ -65,6 +65,6 @@
 | Klayout	Mask            |  layout editor and viewer       |  </a>
 
 
-![bts wallpaper desktop.jpeg](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/bangtan%20boys%20_3.jpeg))
+![bts wallpaper desktop.jpeg](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/b/main/bangtan%20boys%20_3.jpeg))
 
 
