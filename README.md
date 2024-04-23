@@ -1,7 +1,7 @@
 # VLSI_SOC_DESIGN_AND_PLANNING  
 
 1. [Day 1:](#day1)  
-•	[Get Familiar with Open-Source EDA Tools](#11).
+•	[Get Familiar with Open-Source EDA Tools](#11).  
 •	[Intro to OpenLane](#12).  
 •	[Directory Structure of Openlane](#13)  
 •	[Steps to characterize synthesis results](#14)  
@@ -46,10 +46,19 @@ pwd : Show the current directory.
 clear: Clear the terminal.
 tree :This command is used to print the hierarchy of the file system from the present directory.</a>
 
-Intro to OpenLane:<a name ="12">OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
-Software	Description
-Yosys	Verilog synthesis tool
-Magic	Layout editor
+# Intro to OpenLane:<a name ="12">  
+OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
+
+|    Software	  | Description                  |
+| ------------- | -------------                | 
+| Yosys	        | Verilog synthesis tool       | 
+| Magic         | Layout editor                | 
+
+
+
+
+
+ 
 Netgen	Digital netlist comparison tool
 Fault	Digital fault simulator
 CVC SPEF-Extractor	Circuit verification and analysis tool
