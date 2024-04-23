@@ -37,15 +37,18 @@
 •	[Final step for RTL2GDS using tritinRoute and openSTA](#51) 
 
 
-# Day1:<a name ="day1"> 
-## Get Familiar with Open-Source EDA Tools
+# Day1:<a name ="day1">   </a>
+
+
+## Get Familiar with Open-Source EDA Tools <a name ="11"> 
 ### Basic Bash Commands:  
 `cd`   : Change directory.  
 `ls`   : List all files.  
 `mkdir`: Make a directory.  
 `pwd`  : Show the current directory.  
 `clear`: Clear the terminal.  
-`tree` :This command is used to print the hierarchy of the file system from the present directory.  </a>
+`tree` :This command is used to print the hierarchy of the file system from the present directory. </a> 
+
 
 # Intro to OpenLane:<a name ="12">  
 ### OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
