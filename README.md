@@ -39,8 +39,8 @@
 
 # Day1:<a name ="day1"> 
 ## Get Familiar with Open-Source EDA Tools
-###Basic Bash Commands:  
-cd   : Change directory.  
+### Basic Bash Commands:  
+'cd'   : Change directory.  
 ls   : List all files.  
 mkdir: Make a directory.  
 pwd  : Show the current directory.  
@@ -48,28 +48,17 @@ clear: Clear the terminal.
 tree :This command is used to print the hierarchy of the file system from the present directory.  </a>
 
 # Intro to OpenLane:<a name ="12">  
-###OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
+### OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
 
 |    Software	      | Description                  |
 | -------------     | -------------                | 
-| Yosys	            | Verilog synthesis tool       | 
+| Yosys	             | Verilog synthesis tool       | 
 | Magic             | Layout editor                | 
 | Digital           | netlist comparison tool     |               
 | Fault	            | Digital fault simulator       | 
 | CVC SPEF-Extractor| Circuit verification and analysis tool  | 
-| Magic             | Layout editor                | 
+| Magic          | Layout editor                | 
 | CU-GR	        | Global routing tool    |               
-| Klayout	Mask            |  layout editor and viewer       | 
-
-
-
-
-
- 
-	
-
-
-
-</a>
+| Klayout	Mask            |  layout editor and viewer       |  </a>
 
 
