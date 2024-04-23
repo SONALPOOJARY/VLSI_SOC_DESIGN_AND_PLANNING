@@ -37,7 +37,8 @@
 •	[Final step for RTL2GDS using tritinRoute and openSTA](#51) 
 
 
-# Day1:<a name ="day1"> Get Familiar with Open-Source EDA Tools
+# Day1:<a name ="day1"> 
+# Get Familiar with Open-Source EDA Tools
 Basic Bash Commands:
 cd : Change directory.
 ls : List all files.
