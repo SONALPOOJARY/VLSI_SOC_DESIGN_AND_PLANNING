@@ -49,20 +49,26 @@ tree :This command is used to print the hierarchy of the file system from the pr
 # Intro to OpenLane:<a name ="12">  
 OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
 
-|    Software	  | Description                  |
-| ------------- | -------------                | 
-| Yosys	        | Verilog synthesis tool       | 
-| Magic         | Layout editor                | 
+|    Software	      | Description                  |
+| -------------     | -------------                | 
+| Yosys	            | Verilog synthesis tool       | 
+| Magic             | Layout editor                | 
+| Digital           | netlist comparison tool     |               
+| Fault	            | Digital fault simulator       | 
+| CVC SPEF-Extractor| Circuit verification and analysis tool  | 
+| Magic             | Layout editor                | 
+| CU-GR	        | Global routing tool    |               
+| Klayout	Mask            |  layout editor and viewer       | 
 
 
 
 
 
  
-Netgen	Digital netlist comparison tool
-Fault	Digital fault simulator
-CVC SPEF-Extractor	Circuit verification and analysis tool
-CU-GR	Global routing tool
-Klayout	Mask layout editor and viewer</a>
+	
+
+
+
+</a>
 
 
