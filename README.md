@@ -180,4 +180,22 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 •	After synthesis , If every thing goes correctly, we can see the terminal result as  
 ![VirtualBox_vsdworkshop_17_04_2024_23_21_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_17_04_2024_23_21_40.png)  </a>
 
-# Steps to characterize synthesis results:<a name ="14">
+# Steps to characterize synthesis results:<a name ="14">  
+
+According to the synthesis data, there are a total of 1613 D flip-flops and 14876 cells in the design.  
+
+![VirtualBox_vsdworkshop_18_04_2024_00_13_34.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_18_04_2024_00_13_34.png)  
+
+The flop ratio, calculated as the ratio of the number of flip-flops to the total number of cells, stands at 10.84%.  
+
+Prior to execution, the result folder appeared empty. However, after completing synthesis, it's evident that ABC has performed all the necessary mapping tasks.  
+
+![VirtualBox_vsdworkshop_17_04_2024_23_31_20.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_17_04_2024_23_31_20.png)  
+
+In the report, we can pinpoint the exact moment when synthesis was completed. The synthesis report now displays the actual statistics, mirroring the information we previously observed.  </a>
+
+
+
+
+
+
