@@ -200,6 +200,9 @@ In the report, we can pinpoint the exact moment when synthesis was completed. Th
 
 
 
+# Day2:<a name ="day2">   </a>
 
+## Steps to run floorplan using OpenLANE: ="21">  
 
-
+•	To initiate floorplanning, execute the following command.  
+`$ run_floorplan`  
