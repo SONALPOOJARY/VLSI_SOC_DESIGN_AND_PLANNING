@@ -169,7 +169,7 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
   `$package require openlane 0.9`  
   •	Before running the synthesis , we have to prep the design.  
   `$ prep -design picorv32a`  
-
+  
   RESULT FOR THE ABOVE COMMAND:
 
 ![Screenshot (384).png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/Screenshot%20(384).png)
@@ -177,5 +177,8 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 
 •	Preparation is complete; now we can proceed with synthesis. We are now executing the command.  
 `$ run_synthesis`  
+•	After synthesis , If every thing goes correctly, we can see the terminal result as  
+
+
 </a>
 
