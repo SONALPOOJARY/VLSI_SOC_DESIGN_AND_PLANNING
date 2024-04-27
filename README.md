@@ -172,5 +172,10 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 
   RESULT FOR THE ABOVE COMMAND:
 
-![Screenshot (384).png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/Screenshot%20(384).png)  </a>
+![Screenshot (384).png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/Screenshot%20(384).png)
+
+
+•	Preparation is complete; now we can proceed with synthesis. We are now executing the command.  
+`$ run_synthesis`  
+</a>
 
