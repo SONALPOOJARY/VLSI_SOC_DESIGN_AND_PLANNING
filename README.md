@@ -165,6 +165,12 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 `$ ./flow.tcl --interactive`  
 
   We're opting for the --interactive mode because it allows us to manually execute each tool ourselves. However, if we simply run ./flow.tcl, the entire process from RTL to GDS will be completed automatically.  
+  •	we need add the required packages , the below command does that.  
+  `$package require openlane 0.9`  
+  •	Before running the synthesis , we have to prep the design.  
+  `$ prep -design picorv32a`  
+
+  RESULT FOR THE ABOVE COMMAND:
 
 ![Screenshot (384).png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/Screenshot%20(384).png)  </a>
 
