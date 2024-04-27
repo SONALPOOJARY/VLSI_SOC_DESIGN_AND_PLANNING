@@ -139,4 +139,18 @@ designs
 ├── y_huff  
 └── zipdiv  
 
+### To demonstrate the functionality of our tools, we have selected the picorv32a project. Below is an overview of the contents of picorv32a.  
+
+picorv32a  
+
+├── config.tcl  
+├── sky130A_sky130_fd_sc_hd_config.tcl  
+├── sky130A_sky130_fd_sc_hdll_config.tcl  
+├── sky130A_sky130_fd_sc_hs_config.tcl  
+├── sky130A_sky130_fd_sc_ls_config.tcl  
+├── sky130A_sky130_fd_sc_ms_config.tcl  
+└── src  
+    ├── picorv32a.sdc  
+    └── picorv32a.v  
+
 </a>
