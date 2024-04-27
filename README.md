@@ -153,4 +153,18 @@ picorv32a
     ├── picorv32a.sdc  
     └── picorv32a.v  
 
+The `config.tcl` file encompasses comprehensive details about the design, including specifications regarding enrollment, clock period, and relevant port configurations. Settings specified within the config.tcl file take precedence over default configurations within OpenLane, effectively overriding them.  
+
+## Design Preparation Steps:  
+
+ When you start OpenLANE, you should use the flow.tcl script because it guides you through the process step by step, like following a set path. If you use the interactive switch, you can control each step yourself. Without it, OpenLANE will automatically run all the steps from start to finish. As OpenLANE starts up, you'll notice the prompt change to indicate that it's ready for you to start working.  
+
+ Before accessing the OpenLANE tool, navigate to the `/<path to openlane_working_dir>/openlane`. Here, you'll find the necessary files. To initiate the tool, simply enter the following command in this directory:  
+
+ `$  docker  
+  $ ./flow.tcl --interactive`  
+
+  We're opting for the --interactive mode because it allows us to manually execute each tool ourselves. However, if we simply run ./flow.tcl, the entire process from RTL to GDS will be completed automatically.
+
+
 </a>
