@@ -178,7 +178,7 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 •	Preparation is complete; now we can proceed with synthesis. We are now executing the command.  
 `$ run_synthesis`  
 •	After synthesis , If every thing goes correctly, we can see the terminal result as  
-
+![VirtualBox_vsdworkshop_17_04_2024_23_21_40.png]()
 
 </a>
 
