@@ -206,3 +206,15 @@ In the report, we can pinpoint the exact moment when synthesis was completed. Th
 
 •	To initiate floorplanning, execute the following command.  
 `$ run_floorplan`  
+![VirtualBox_vsdworkshop_18_04_2024_23_57_52.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_18_04_2024_23_57_52.png)  
+
+•	If floorplanning executes without any errors, the terminal output should resemble the following.  
+
+![VirtualBox_vsdworkshop_18_04_2024_23_58Floorplan results are created in the below locations._07.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_18_04_2024_23_58_07.png)  
+
+•	Floorplan results are created in the below locations.  
+`vsduser@vsdsquadron:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-04_17-25/results/floorplan$ ls
+merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`  
+
+The file picorv32a.floorplan.def contains detailed floorplanning information, while picorv32a.floorplan.def.png provides a visual representation of the floorplan. You can view the floorplan image below for a clearer understanding of the layout.  
+
