@@ -47,7 +47,8 @@
 `mkdir`: Make a directory.  
 `pwd`  : Show the current directory.  
 `clear`: Clear the terminal.  
-`tree` :This command is used to print the hierarchy of the file system from the present directory. </a> 
+`tree` :This command is used to print the hierarchy of the file system from the present directory. 
+`command --help` : shows the complete use that command  </a> 
 
 
 # Intro to OpenLane:<a name ="12">  
