@@ -161,7 +161,7 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 
  Before accessing the OpenLANE tool, navigate to the `/<path to openlane_working_dir>/openlane`. Here, you'll find the necessary files. To initiate the tool, simply enter the following command in this directory:  
 
-`$  docker`
+`$  docker`  
 `$ ./flow.tcl --interactive`  
 
   We're opting for the --interactive mode because it allows us to manually execute each tool ourselves. However, if we simply run ./flow.tcl, the entire process from RTL to GDS will be completed automatically.
