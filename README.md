@@ -66,15 +66,28 @@
 | Klayout	Mask            |  layout editor and viewer       |  
 
 
-In the Sky130_fd_sc_hd PDK variant, which pertains to the SkyWater foundry's 130nm process, the inclusion of various technology files such as Verilog, SPICE, techlef, meglef, mag, GDS, CDL, lib, and LEF, ensures comprehensive support for design and layout requirements, facilitating efficient development of high-density standard cell libraries. 
+In the Sky130_fd_sc_hd PDK variant, which pertains to the SkyWater foundry's 130nm process, the inclusion of various technology files such as Verilog, SPICE, techlef, meglef, mag, GDS, CDL, lib, and LEF, ensures comprehensive support for design and layout requirements, facilitating efficient development of high-density standard cell libraries.  </a>
+
+# Directory Structure of Openlane ="13">  
+### This the directory structure of the openlane  
 
 
-git init
-git add AUTHORS.md clean_runs.tcl configuration conf.py CONTRIBUTING.md default.cvcrc designs docker_build docs flow.tcl LICENSE Makefile README.md regression_results report_generation_wrapper.py run_designs.py scripts
-git commit -m "Initial commit with openlane files and directories"
-git remote add <remote_name> <repository_url>
-git push -u <remote_name> <branch_name>  </a>
-
-
-
+openlane
+├── AUTHORS.md
+├── clean_runs.tcl
+├── configuration
+├── conf.py
+├── CONTRIBUTING.md
+├── default.cvcrc
+├── designs
+├── docker_build
+├── docs
+├── flow.tcl
+├── LICENSE
+├── Makefile
+├── README.md
+├── regression_results
+├── report_generation_wrapper.py
+├── run_designs.py
+└── scripts  </a>
 
