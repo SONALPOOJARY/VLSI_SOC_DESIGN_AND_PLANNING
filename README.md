@@ -51,8 +51,8 @@
 `command --help` : shows the complete use that command  </a> 
 
 
-# Intro to OpenLane:<a name ="12">  
-### OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
+## Intro to OpenLane:<a name ="12">  
+OpenLane is an automated RTLtoGDSII flow. It consists of a variety of open-source tools including:
 
 |    Software	      | Description                  |
 | -------------     | -------------                | 
@@ -68,7 +68,7 @@
 
 In the Sky130_fd_sc_hd PDK variant, which pertains to the SkyWater foundry's 130nm process, the inclusion of various technology files such as Verilog, SPICE, techlef, meglef, mag, GDS, CDL, lib, and LEF, ensures comprehensive support for design and layout requirements, facilitating efficient development of high-density standard cell libraries.  </a>
 
-# Directory Structure of Openlane:<a name ="13">  
+## Directory Structure of Openlane:<a name ="13">  
 ### This the directory structure of the openlane  
 
 
@@ -180,7 +180,7 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 •	After synthesis , If every thing goes correctly, we can see the terminal result as  
 ![VirtualBox_vsdworkshop_17_04_2024_23_21_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_17_04_2024_23_21_40.png)  </a>
 
-# Steps to characterize synthesis results:<a name ="14">  
+## Steps to characterize synthesis results:<a name ="14">  
 
 According to the synthesis data, there are a total of 1613 D flip-flops and 14876 cells in the design.  
 
