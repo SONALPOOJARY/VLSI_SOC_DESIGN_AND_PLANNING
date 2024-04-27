@@ -186,6 +186,10 @@ According to the synthesis data, there are a total of 1613 D flip-flops and 1487
 
 ![VirtualBox_vsdworkshop_18_04_2024_00_13_34.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_18_04_2024_00_13_34.png)  
 
+
+`flop ratio = (number of flip flops) / (number of total cells)`  
+
+
 The flop ratio, calculated as the ratio of the number of flip-flops to the total number of cells, stands at 10.84%.  
 
 Prior to execution, the result folder appeared empty. However, after completing synthesis, it's evident that ABC has performed all the necessary mapping tasks.  
