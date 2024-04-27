@@ -166,4 +166,4 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 
   We're opting for the --interactive mode because it allows us to manually execute each tool ourselves. However, if we simply run ./flow.tcl, the entire process from RTL to GDS will be completed automatically.  
 
- 
+
