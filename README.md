@@ -72,7 +72,7 @@ In the Sky130_fd_sc_hd PDK variant, which pertains to the SkyWater foundry's 130
 ### This the directory structure of the openlane  
 
 
-openlane
+openlane  
 ├── AUTHORS.md  
 ├── clean_runs.tcl  
 ├── configuration  
@@ -89,5 +89,52 @@ openlane
 ├── regression_results  
 ├── report_generation_wrapper.py  
 ├── run_designs.py  
-└── scripts  </a>
+└── scripts  
 
+### The Design folder have few design.  This includes  
+
+designs  
+
+├── 151  
+├── aes  
+├── aes128  
+├── aes192  
+├── aes256  
+├── aes_cipher  
+├── aes_core  
+├── APU  
+├── blabla  
+├── BM64  
+├── chacha  
+├── cic_decimator  
+├── des  
+├── des3  
+├── digital_pll_sky130_fd_sc_hd  
+├── genericfir  
+├── inverter  
+├── jpeg_encoder  
+├── ldpc_decoder_802_3an  
+├── ldpcenc  
+├── manual_macro_placement_test  
+├── md5  
+├── ocs_blitter  
+├── picorv32a  
+├── point_add  
+├── point_scalar_mult  
+├── PPU  
+├── README.md  
+├── s44  
+├── salsa20  
+├── sha3  
+├── sha512  
+├── sound  
+├── spm  
+├── synth_ram  
+├── usb  
+├── usb_cdc_core  
+├── usbf_device  
+├── wbqspiflash  
+├── xtea  
+├── y_dct  
+├── y_huff  
+└── zipdiv  </a>
