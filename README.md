@@ -216,5 +216,13 @@ In the report, we can pinpoint the exact moment when synthesis was completed. Th
 `vsduser@vsdsquadron:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-04_17-25/results/floorplan$ ls
 merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`  
 
-The file picorv32a.floorplan.def contains detailed floorplanning information, while picorv32a.floorplan.def.png provides a visual representation of the floorplan. You can view the floorplan image below for a clearer understanding of the layout.  
+-The file picorv32a.floorplan.def contains detailed floorplanning information, while picorv32a.floorplan.def.png provides a visual representation of the floorplan. You can view the floorplan image below for a clearer understanding of the layout.  
 
+![VirtualBox_vsdworkshop_23_04_2024_23_43_34%20floorplan%20color%20output.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_43_34%20floorplan%20color%20output.png)  
+
+
+
+
+
+
+</a>
