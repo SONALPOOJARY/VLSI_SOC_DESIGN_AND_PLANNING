@@ -63,7 +63,9 @@
 | CVC SPEF-Extractor| Circuit verification and analysis tool  | 
 | Magic          | Layout editor                | 
 | CU-GR	        | Global routing tool    |               
-| Klayout	Mask            |  layout editor and viewer       |  </a>
+| Klayout	Mask            |  layout editor and viewer       |  
+
+In the Sky130_fd_sc_hd PDK variant, which pertains to the SkyWater foundry's 130nm process, the inclusion of various technology files such as Verilog, SPICE, techlef, meglef, mag, GDS, CDL, lib, and LEF, ensures comprehensive support for design and layout requirements, facilitating efficient development of high-density standard cell libraries.  </a>
 
 
 
