@@ -164,7 +164,8 @@ The `config.tcl` file encompasses comprehensive details about the design, includ
 `$  docker`  
 `$ ./flow.tcl --interactive`  
 
-  We're opting for the --interactive mode because it allows us to manually execute each tool ourselves. However, if we simply run ./flow.tcl, the entire process from RTL to GDS will be completed automatically.
+  We're opting for the --interactive mode because it allows us to manually execute each tool ourselves. However, if we simply run ./flow.tcl, the entire process from RTL to GDS will be completed automatically.  
 
+  https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/Screenshot%20(384).png
 
 </a>
