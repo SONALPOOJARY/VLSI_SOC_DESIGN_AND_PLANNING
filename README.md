@@ -422,13 +422,17 @@ drc_Tests
 •	Next, select an empty area, hover the mouse pointer over the metal3 contact icon, and press the 'p' button. Then type 'pek' in the tkcon and execute the command 'cif see VIA2' in the tkcon tab. This will display the via information.  
 
  
-![VirtualBox_vsdworkshop_22_04_2024_01_05_11.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_11.png)
+![VirtualBox_vsdworkshop_22_04_2024_01_05_11.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_11.png)  
+
+
+
+![VirtualBox_vsdworkshop_22_04_2024_01_05_29.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_29.png)  
+
+
 
 •	To remove the information, execute the command "clear feed".  
 
-![VirtualBox_vsdworkshop_22_04_2024_01_05_29.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_29.png)
-
-![VirtualBox_vsdworkshop_22_04_2024_01_06_38.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_06_38.png)
+![VirtualBox_vsdworkshop_22_04_2024_01_06_38.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_06_38.png)  </a>
 
 
 
