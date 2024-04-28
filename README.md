@@ -303,9 +303,9 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 •	similarly we will check for the output terminal also.(by double pressing "S" to select the entire thing at output Y).So, we can see that "Y" is attached to locali in cell def sky130_inv.  
 •	we can check the source of the PMOS is connected to the ground or not. and similarly we can check it for NMOS also.  
 
-![VirtualBox_vsdworkshop_21_04_2024_15_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_15_32_45.png)
+![VirtualBox_vsdworkshop_21_04_2024_15_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_15_32_45.png)  </a>
 
-## Lab steps to create std cell layout and extract spice netlist:<a name  ="31">
+## Lab steps to create std cell layout and extract spice netlist:<a name  ="32">
 
 •	To extract the file from here, we need to enter the command in the tkcon window. The command is `extract all`.  
 ![VirtualBox_vsdworkshop_21_04_2024_16_08_17.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_08_17.png)  
@@ -316,21 +316,101 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 ![VirtualBox_vsdworkshop_21_04_2024_16_11_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_11_32.png)  
 
 •	so, now we are checking the location and at there spice file has been created.  
-•	Let's examine the contents of the spice file by typing `vim sky130_inv.spice`. 
+•	Let's examine the contents of the spice file by typing `vim sky130_inv.spice`.  
 
 ![VirtualBox_vsdworkshop_21_04_2024_16_11_54.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_11_54.png)  
+
 
  
 ![VirtualBox_vsdworkshop_21_04_2024_16_12_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_12_48.png)  
 
-•	We need to make some changes in the code so that we can make the a transiant simualtion for the given circuit.
+•	We need to make some changes in the code so that we can make the a transiant simualtion for the given circuit.  
 
 ![VirtualBox_vsdworkshop_21_04_2024_21_12_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_21_12_40.png)  
 
 
+•	Then using ngpsice, we can simulate the inverter.  
+
+`$ ngspice sky130_inv.spice`  
+
+
+•	After executing the command, you will see the output below if there are no errors.  
+
 
 ![VirtualBox_vsdworkshop_21_04_2024_23_24_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_23_24_32.png)  
 
+•	To plot the graphs, enter the command below. You will then observe the waveform.  
+
+`ngspice 1-> plot y vs time a`  
+
 ![VirtualBox_vsdworkshop_21_04_2024_23_27_24.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_23_27_24.png)  
+
+###We can calculate various timing parameters from the above graph:  
+
+- Rise time: It is the time taken by the signal to rise from 20% to 80% of its value. Rise time = (2.2489 - 2.1819) = 66.92 picoseconds.  
+
+  
+- Fall time: It is the time taken by the output for transition from 80% to 20% of its value. Fall time = (4.09512 - 4.05264)e-09 = 42.51 picoseconds.  
+
+  
+- Propagation delay: It is the time difference between the 50% points of the input and output signals. Propagation delay = (2.2106 - 2.15012)e-09 = 60.48 picoseconds.  
+
+  
+- Cell fall delay: It is the time for the output falling to 50% while the input is rising to 50%. Cell fall delay = (4.07735 - 4.04988)e-09 = 27.47 picoseconds.  </a>
+
+
+## Lab introduction to Magic tool options and DRC rules:<a name  ="33">
+
+•	To download and extract the DRC corrections, execute the following commands.  
+
+`$ wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz  
+$ tar xfz drc_tests.tgz  
+$ cd drc_tests`  
+
+### In the folder created you will find the all the files as listed below:
+
+drc_Tests  
+├── capm.mag  
+├── difftap.mag  
+├── dnwell.mag  
+├── hvtp.mag  
+├── hvtr.mag  
+├── licon.mag  
+├── li.mag  
+├── lvtn.mag  
+├── mcon.mag  
+├── met1.mag  
+├── met2.mag  
+├── met3.mag  
+├── met4.mag  
+├── met5.mag  
+├── npc.mag  
+├── nsd.mag  
+├── nwell.mag  
+├── pad.mag  
+├── poly.mag  
+├── psd.mag  
+├── rpm.mag  
+├── sky130A.tech  
+├── tunm.mag  
+├── varac.mag  
+├── via2.mag  
+├── via3.mag  
+├── via4.mag  
+└── via.mag  </a>
+
+## Lab introduction to Magic and steps to load Sky130 tech-rules:<a name  ="34">  
+
+•	To open Magic, use the following command.  
+
+`$ magic -d XR &`  
+
+
+
+
+
+
+
+
 
 
