@@ -405,15 +405,26 @@ drc_Tests
 
 `$ magic -d XR &`  
 
-![VirtualBox_vsdworkshop_22_04_2024_00_38_04.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_38_04.png)
+![VirtualBox_vsdworkshop_22_04_2024_00_38_04.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_38_04.png)  
 
-![VirtualBox_vsdworkshop_22_04_2024_00_45_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_45_42.png)
 
-![VirtualBox_vsdworkshop_22_04_2024_01_01_38.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_01_38.png)
+![VirtualBox_vsdworkshop_22_04_2024_00_45_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_45_42.png)  
 
-![VirtualBox_vsdworkshop_22_04_2024_00_51_05.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_51_05.png)
 
+![VirtualBox_vsdworkshop_22_04_2024_01_01_38.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_01_38.png)  
+
+
+•	The `drc why` command provides the reasons for the failure of the system.  
+
+
+![VirtualBox_vsdworkshop_22_04_2024_00_51_05.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_51_05.png)  
+
+•	Next, select an empty area, hover the mouse pointer over the metal3 contact icon, and press the 'p' button. Then type 'pek' in the tkcon and execute the command 'cif see VIA2' in the tkcon tab. This will display the via information.  
+
+ 
 ![VirtualBox_vsdworkshop_22_04_2024_01_05_11.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_11.png)
+
+•	To remove the information, execute the command "clear feed".  
 
 ![VirtualBox_vsdworkshop_22_04_2024_01_05_29.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_29.png)
 
