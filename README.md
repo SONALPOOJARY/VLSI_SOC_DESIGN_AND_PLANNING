@@ -291,5 +291,36 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 ## Lab introduction to Sky130 basic layers layout and LEF using inverted:<a name  ="31">  
 
+![VirtualBox_vsdworkshop_21_04_2024_00_50_37.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_00_50_37.png)  
+
+
+•	In the Sky130 process, each color represents a different layer. The first layer, indicated by blue-purple, represents the local interconnect. The second layer, depicted in light purple, corresponds to metal 1, while metal 2 is represented by pink. N-well is illustrated with a solid dashed line, green denotes the N-diffusion region, and red represents the polysilicon gate. Additionally, brown signifies the P-diffusion layer.  
+•	In the tkcon window, we can identify the selected area as NMOS, and similarly, we can check for PMOS. This allows us to verify the functionality of the CMOS design.  
+  
+
+![VirtualBox_vsdworkshop_21_04_2024_15_29_19.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_15_29_19.png)  
+
+•	similarly we will check for the output terminal also.(by double pressing "S" to select the entire thing at output Y).So, we can see that "Y" is attached to locali in cell def sky130_inv.  
+•	we can check the source of the PMOS is connected to the ground or not. and similarly we can check it for NMOS also.  
+
+### Lab steps to create std cell layout and extract spice netlist
+
+•	To extract the file from here, we need to enter the command in the tkcon window. The command is `extract all`.
+
+![VirtualBox_vsdworkshop_21_04_2024_15_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_15_32_45.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_16_08_17.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_08_17.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_16_11_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_11_32.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_16_11_54.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_11_54.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_16_12_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_12_48.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_21_12_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_21_12_40.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_23_24_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_23_24_32.png)  
+
+![VirtualBox_vsdworkshop_21_04_2024_23_27_24.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_23_27_24.png)  
 
 
