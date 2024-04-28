@@ -485,7 +485,45 @@ For further details, refer to the track file located at:
 
 `pdk/sky130/libs.tech/openlane/sky130_fd_sc_hd/track.info`
 
+![VirtualBox_vsdworkshop_22_04_2024_10_33_26.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_33_26.png)
 
+•	During the routing stage, tracks act as guides for routing metal layers such as metal 1, metal 2, etc.
+•	Automated Place and Route (PNR) necessitates specifying routing paths, which are determined by tracks. Each track is positioned at coordinates (0.23, 0.46)um horizontally and (0.17, 0.34)um vertically for li1, metal 1, and metal 2 layers.
+•	
+•	In the layout, ports are located on the li1 layer. To ensure that ports align with the intersection of tracks, we need to convert the grid into tracks.
+•	To achieve this, we'll first open the tracks file and then access the tkcon window to execute the "help grid" command.
+
+![VirtualBox_vsdworkshop_22_04_2024_10_44_08.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_44_08.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_10_46_53.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_46_53.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_10_56_18.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_56_18.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_11_00_37.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_00_37.png)
+
+
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_07_50.png)
+
+
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_08_02.png)
+
+
+![CONFIG.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/CONFIG.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_11_51_08.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_51_08.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_12_56_00.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_12_56_00.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_01_52.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_01_52.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_03_49.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_03_49.png)
 
 
 
