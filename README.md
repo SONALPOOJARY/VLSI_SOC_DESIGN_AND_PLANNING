@@ -439,19 +439,24 @@ drc_Tests
 ## Lab exercise to fix poly.9 error in Sky130 tech-file:<a name  ="35">  
 
 •	In order to load poly,execute the below command  
-`load poly`  
+`%load poly`  
 
 
 ![VirtualBox_vsdworkshop_22_04_2024_01_11_35.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_11_35.png)  
 
 
+•	The wrong rules in the files  
 
 ![VirtualBox_vsdworkshop_22_04_2024_01_28_14.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_28_14.png)  
 
 
-
 ![VirtualBox_vsdworkshop_22_04_2024_01_29_34.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_29_34.png)  
 
+•	The new rules can be added 
+•	Changing the drc rules we have to reload the tech file and and check the drc again by running the commands.  
+
+`tech load sky130A.tech  
+check drc`  
 
 
 ![VirtualBox_vsdworkshop_22_04_2024_01_40_06.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_40_06.png)  
@@ -460,11 +465,7 @@ drc_Tests
 
 ![VirtualBox_vsdworkshop_22_04_2024_01_41_39.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_41_39.png)  
 
-
-
-
-
-</a>
+</a>  
 
 
 
