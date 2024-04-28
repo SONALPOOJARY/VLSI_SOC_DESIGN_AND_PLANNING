@@ -229,3 +229,20 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 `magic -T /home/<user name>/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def`  
 
+•	After executing the above command, a pop-up window of Magic should appear, resembling the following:  
+
+![/VirtualBox_vsdworkshop_20_04_2024_12_07_13.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_12_07_13.png)  
+
+•	Next, hover your mouse over the design and press `s` to select it. Then, press `v` to center the design on the screen.
+
+![VirtualBox_vsdworkshop_19_04_2024_20_25_17.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_19_04_2024_20_25_17.png)  
+
+•	To select a portion of the design in Magic, left-click on one corner and right-click on another to define the area. Then, press `z`
+•	To zoom in on that section. In Magic, press `s` to select sections. After randomly choosing a component, press `s` and shift the Magic command window. Finally, execute the command `% what`.This will show the deatils of the selected component.  
+
+
+[![VirtualBox_vsdworkshop_20_04_2024_12_08_16.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_12_08_16.png)  
+
+•	You can observe that the Decap cells are positioned along the borders of the side rows.  
+
+![VirtualBox_vsdworkshop_19_04_2024_20_31_50.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_19_04_2024_20_31_50.png)  </a>
