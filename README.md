@@ -405,6 +405,22 @@ drc_Tests
 
 `$ magic -d XR &`  
 
+![VirtualBox_vsdworkshop_22_04_2024_00_38_04.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_38_04.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_00_45_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_45_42.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_01_01_38.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_01_38.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_00_51_05.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_00_51_05.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_01_05_11.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_11.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_01_05_29.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_05_29.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_01_06_38.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_06_38.png)
+
+
+
 
 
 
