@@ -241,8 +241,22 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 •	To zoom in on that section. In Magic, press `s` to select sections. After randomly choosing a component, press `s` and shift the Magic command window. Finally, execute the command `% what`.This will show the deatils of the selected component.  
 
 
-[![VirtualBox_vsdworkshop_20_04_2024_12_08_16.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_12_08_16.png)  
+![VirtualBox_vsdworkshop_20_04_2024_12_08_16.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_12_08_16.png)  
 
 •	You can observe that the Decap cells are positioned along the borders of the side rows.  
 
 ![VirtualBox_vsdworkshop_19_04_2024_20_31_50.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_19_04_2024_20_31_50.png)  </a>
+
+
+
+# Congestion aware placement using Replace:<a name  ="23">  
+
+•	After completing floorplanning, the next step is placement. There are two types of placement: global placement and detailed placement. When we initiate the placement process, the first stage is global placement. The primary goal of global placement is to minimize wire lengths.  
+
+
+•	To perform placement, execute the following command:  
+
+`run_placement`  
+
+•	After run _placement
+
