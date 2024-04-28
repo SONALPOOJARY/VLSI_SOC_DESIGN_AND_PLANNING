@@ -457,9 +457,9 @@ drc_Tests
 •	The new rules can be added  
 •	Changing the drc rules we have to reload the tech file and and check the drc again by running the commands.    
 
-`tech load sky130A.tech  
-check drc`  
-
+`tech load sky130A.tech`  
+`check drc`  
+  
 
 ![VirtualBox_vsdworkshop_22_04_2024_01_40_06.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_01_40_06.png)  
 
