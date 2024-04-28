@@ -202,7 +202,7 @@ In the report, we can pinpoint the exact moment when synthesis was completed. Th
 
 # Day2:<a name ="day2">   </a>
 
-# Steps to run floorplan using OpenLANE:<a name  ="21">  
+## Steps to run floorplan using OpenLANE:<a name  ="21">  
 
 •	To initiate floorplanning, execute the following command.  
 `$ run_floorplan`  
@@ -249,7 +249,7 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 
 
-# Congestion aware placement using Replace:<a name  ="23">  
+## Congestion aware placement using Replace:<a name  ="23">  
 
 •	After completing floorplanning, the next step is placement. There are two types of placement: global placement and detailed placement. When we initiate the placement process, the first stage is global placement. The primary goal of global placement is to minimize wire lengths.  
 
@@ -285,4 +285,9 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 
 ![VirtualBox_vsdworkshop_20_04_2024_13_32_12.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_13_32_12.png)  </a>
+
+
+# Day3:<a name ="day3">   </a>
+
+## Lab introduction to Sky130 basic layers layout and LEF using inverted:<a name  ="31">  
 
