@@ -303,21 +303,30 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 •	similarly we will check for the output terminal also.(by double pressing "S" to select the entire thing at output Y).So, we can see that "Y" is attached to locali in cell def sky130_inv.  
 •	we can check the source of the PMOS is connected to the ground or not. and similarly we can check it for NMOS also.  
 
-### Lab steps to create std cell layout and extract spice netlist
+![VirtualBox_vsdworkshop_21_04_2024_15_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_15_32_45.png)
 
-•	To extract the file from here, we need to enter the command in the tkcon window. The command is `extract all`.
+## Lab steps to create std cell layout and extract spice netlist:<a name  ="31">
 
-![VirtualBox_vsdworkshop_21_04_2024_15_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_15_32_45.png)  
-
+•	To extract the file from here, we need to enter the command in the tkcon window. The command is `extract all`.  
 ![VirtualBox_vsdworkshop_21_04_2024_16_08_17.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_08_17.png)  
+
+•	Now let's go to this location from the terminal. it is exctracted.  
 
 ![VirtualBox_vsdworkshop_21_04_2024_16_11_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_11_32.png)  
 
+•	We'll utilize the .ext file to generate the spice file for use with our ngspice tool. To achieve this, we apply the command `ext2spice cthresh 0 rthresh 0` in the tkcon window. This command doesn't create anything new. Subsequently, we need to re-enter the `ext2spice` command in the tkcon window.  
+
 ![VirtualBox_vsdworkshop_21_04_2024_16_11_54.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_11_54.png)  
 
+•	so, now we are checking the location and at there spice file has been created.  
+•	Let's examine the contents of the spice file by typing `vim sky130_inv.spice`.  
 ![VirtualBox_vsdworkshop_21_04_2024_16_12_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_16_12_48.png)  
 
+•	We need to make some changes in the code so that we can make the a transiant simualtion for the given circuit.
+
 ![VirtualBox_vsdworkshop_21_04_2024_21_12_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_21_12_40.png)  
+
+
 
 ![VirtualBox_vsdworkshop_21_04_2024_23_24_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_23_24_32.png)  
 
