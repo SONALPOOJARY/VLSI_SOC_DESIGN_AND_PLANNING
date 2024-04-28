@@ -220,9 +220,12 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 ![VirtualBox_vsdworkshop_23_04_2024_23_43_34%20floorplan%20color%20output.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_43_34%20floorplan%20color%20output.png)  
 
-
-
-
-
-
 </a>
+
+
+# Review floorplan layout in Magic:<a name  ="22">  
+
+•	To view and edit the floor plan, we can utilize Magic by executing the following command.  
+
+`magic -T /home/<user name>/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def`  
+
