@@ -472,3 +472,73 @@ drc_Tests
 
 
 
+# Day4:<a name ="day4">   </a>
+
+## Pre-layout timing analysis and importance of good clock tree:<a name  ="41">  
+
+•	To integrate the '.lef' file from the '.mag' file into the picorv32a flow, we must follow specific guidelines for creating standard cells:  
+
+-Ensure that input and output ports align with the intersection of vertical and horizontal tracks.  
+-The standard cell's width should be an odd multiple of the track pitch, and its height should be an odd multiple of the track's vertical pitch.  
+
+For further details, refer to the track file located at:  
+
+`pdk/sky130/libs.tech/openlane/sky130_fd_sc_hd/track.info`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Lab steps to configure synthesis settings to fix slack and include vsdinv:<a name  ="42">
+
+
+## Lab steps to configure OpenSTA for post-synth timing analysis:<a name  ="43">
+
+
+## Lab steps to optimize synthesis to reduce setup violations:<a name  ="44">
+
+
+## Lab steps to do basic timing ECO:<a name  ="45">
+
+
+## Lab steps to run CTS using Triton:<a name  ="46">
+
+
+## Lab steps to verify CTS runs:<a name  ="47">
+
+
+## Lab steps to execute OpenSTA with right timing libraries and CTS assignment:<a name  ="48">
+
+                           
+
