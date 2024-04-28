@@ -258,5 +258,31 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 `run_placement`  
 
-•	After run _placement
+•	After run _placement  
+
+![VirtualBox_vsdworkshop_20_04_2024_13_13_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_13_13_40.png)  
+
+
+![VirtualBox_vsdworkshop_20_04_2024_13_29_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_13_29_45.png)  
+
+•	The image `picorv32a.placement.def.png`  is an automatic snapshot of the placement process.
+
+![VirtualBox_vsdworkshop_23_04_2024_23_41_42%20%20placement%20colour%20output.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_41_42%20%20placement%20colour%20output.png)  
+
+•	we view the plcament in magic, execute the command, from the 
+ 
+ `/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-04_17-25/results/placement` folder.  
+
+ •	After executing the below command you will get the magic window and here you can observe the the floorplan.  
+
+`magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def`  
+ 
+•	If you zoom the image you can see the global placement.  
+
+![VirtualBox_vsdworkshop_20_04_2024_13_30_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_13_30_32.png)  
+
+-GLOBAL PLACEMENT  
+
+
+![VirtualBox_vsdworkshop_20_04_2024_13_32_12.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_13_32_12.png)  </a>
 
