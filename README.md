@@ -436,6 +436,10 @@ drc_Tests
 
 
 
+## Lab exercise to fix poly.9 error in Sky130 tech-file:<a name  ="35">  
+
+•	In order to load poly,execute the below command  
+`load poly`  
 
 
 
