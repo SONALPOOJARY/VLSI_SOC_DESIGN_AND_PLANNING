@@ -664,12 +664,12 @@ from the folder
 
 •	Now we have to make a new `pre_sta.conf file`. We can do this by vim editor . We store this `pre_sta.conf` file in `openlane` folder.  
 
-![VirtualBox_vsdworkshop_29_04_2024_01_14_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_29_04_2024_01_14_42.png)  
+  ![VirtualBox_vsdworkshop_29_04_2024_01_15_09.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_29_04_2024_01_15_09.png)
 
 •	Now, we'll create a new file named "my_base.sdc" in the "openlane/designs/picorv32a/src" directory. We'll copy the content from the "base.sdc" file and make the necessary edits as shown below.
 
-
-![VirtualBox_vsdworkshop_29_04_2024_01_15_09.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_29_04_2024_01_15_09.png)  
+![VirtualBox_vsdworkshop_29_04_2024_01_14_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_29_04_2024_01_14_42.png)
+  
 
 
 •	Then we execute the command sta pre_sta.conf , then we get the result as below
@@ -860,6 +860,8 @@ from the folder
 
 
 ## Lab steps to execute OpenSTA with right timing libraries and CTS assignment:<a name  ="48">  
+
+
 •	To remove sky130_fd_sc_hd__clkbuf_1 from the list - `set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]`  
 
 •	To check the current value of CTS_CLK_BUFFER_LIST  - `echo $::env(CTS_CLK_BUFFER_LIST)`  
