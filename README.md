@@ -721,20 +721,73 @@ from the folder
 •	To replace the cell with ID "_14510_" with "sky130_fd_sc_hd__or3_4", execute `replace_cell _14510_ sky130_fd_sc_hd__or3_4`  
 •	To generate a custom timing report with fields "net cap slew input_pins" and four digits, use `report_checks -fields {net cap slew input_pins} -digits 4`  
 
-![]()  
+![VirtualBox_vsdworkshop_22_04_2024_22_50_57.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_22_50_57.png)  
 
-![]()  
+![VirtualBox_vsdworkshop_22_04_2024_22_59_16.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_22_59_16.png)  
 
 ![VirtualBox_vsdworkshop_22_04_2024_23_02_25.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_25.png)  
 
-![VirtualBox_vsdworkshop_22_04_2024_23_02_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_48.png)  
+![VirtualBox_vsdworkshop_22_04_2024_23_02_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_48.png)  </a>  
 
 
 
 
+## Lab steps to run CTS using Triton:<a name  ="46">  
+
+•	Now, after making changes, we'll write the Verilog file using the command "write_verilog", and the file will be located in  
+
+`/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-04_09-27/results/synthesis/picorv32a.synthesis.v`  
+
+![]()  
+
+![]()  
 
 
-## Lab steps to run CTS using Triton:<a name  ="46">
+•	Now, we won't redo the synthesis to avoid clearing our modifications. Instead, we'll continue from the floor plan stage. To run the floor plan, we'll proceed by executing the following commands.  
+
+   `prep -design picorv32a -tag 22-04_09-27 `  
+   `set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`  
+   `add_lefs -src $lefs`  
+   `set ::env(SYNTH_STRATEGY) "DELAY 3"`  
+   `set ::env(SYNTH_SIZING) 1`  
+   `init_floorplan`  
+   `place_io`  
+   `tap_decap_or`  
+   `run_placement`      
+
+   `# Incase getting error will use this command    
+   unset ::env(LIB_CTS)`  
+
+![]()  
+
+![]()  
+
+
+![]()  
+
+
+
+![]()  
+
+
+![]()  
+
+- Finally we run the command `run_cts`  
+
+![]()  
+
+
+- After successful execution of the command, it will generate the` picorv32a.cts.def` file. This file will be used for power planning and further steps.
+
+- magic -T output
+  
+![]()  
+
+
+- Output in color 
+![]()  </a>
+
+
 
 
 ## Lab steps to verify CTS runs:<a name  ="47">
