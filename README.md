@@ -34,7 +34,7 @@
 •	[Final step for RTL2GDS using tritinRoute and openSTA](#51) 
 
 
-# Day1:<a name ="day1">   </a>
+# Day 1:<a name ="day1">   </a>
 
 
 ## Get Familiar with Open-Source EDA Tools <a name ="11"> 
@@ -197,7 +197,7 @@ In the report, we can pinpoint the exact moment when synthesis was completed. Th
 
 
 
-# Day2:<a name ="day2">   </a>
+# Day 2:<a name ="day2">   </a>
 
 ## Steps to run floorplan using OpenLANE:<a name  ="21">  
 
@@ -284,7 +284,7 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 ![VirtualBox_vsdworkshop_20_04_2024_13_32_12.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_20_04_2024_13_32_12.png)  </a>
 
 
-# Day3:<a name ="day3">   </a>
+# Day 3:<a name ="day3">   </a>
 
 ## Lab introduction to Sky130 basic layers layout and LEF using inverted:<a name  ="31">  
 
@@ -469,7 +469,7 @@ drc_Tests
 
 
 
-# Day4:<a name ="day4">   </a>
+# Day 4:<a name ="day4">   </a>
 
 ## Pre-layout timing analysis and importance of good clock tree:<a name  ="41">  
 
@@ -914,7 +914,7 @@ from the folder
 ![VirtualBox_vsdworkshop_23_04_2024_13_10_57%20%20day4%20final.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_13_10_57%20%20day4%20final.png)  </a>
 
 
-# Day5:<a name ="day5">   </a>  
+# Day 5:<a name ="day5">   </a>  
 
 ## Final step for RTL2GDS using tritinRoute and openSTA:<a name  ="51">  
 
