@@ -551,7 +551,7 @@ For further details, refer to the track file located at:
 
 •	We'll check the README file and make changes to the OpenLANE settings accordingly.  
 
-
+![VirtualBox_vsdworkshop_22_04_2024_13_19_06.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_19_06.png)
 
 
 •	We can configure environment parameters by running the following command.  
@@ -579,13 +579,44 @@ For further details, refer to the track file located at:
 `prep -design picorv32a -tag 01-04_12-54 -overwrite`  
 
 
-
 •	In the previous run we have observed the negative slack value  
 
 `wns(worst negative slack)= -23.89`  
 `tns(total negative slack)= -711.59`  
 
 •	After making the settings changes, we'll rerun the synthesis by executing the command `run_synthesi`.  
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_28_49.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_28_49.png)  
+
+•	Now we execute the `run_floorplan` command
+
+![VirtualBox_vsdworkshop_22_04_2024_13_30_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_30_32.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_13_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_32_45.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_33_21.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_21.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_33_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_40.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_33_59.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_59.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_13_34_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_34_32.png)
+
+
+![VirtualBox_vsdworkshop_22_04_2024_14_07_57.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_07_57.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_14_08_51.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_08_51.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_14_10_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_10_42.png)
+
+![VirtualBox_vsdworkshop_22_04_2024_14_14_13.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_14_13.png)
+
+
 
 
 
