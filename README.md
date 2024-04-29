@@ -808,8 +808,9 @@ from the folder
 
 •	In Openroad , observe that it does not contain a synthesis file.  
 
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20command%20in%20openlane.png)  
+ 
 
 -To create a database in OPENROAD using LEF and TMP files, follow these steps:
 1.Ensure that you are in the directory containing the LEF and TMP files.  
@@ -817,8 +818,7 @@ from the folder
 2.Launch the OPENROAD tool by entering the command: openroad inside the openlane floor.  
 
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
-
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20command%20in%20openlane.png) 
 
 
 - Once inside the OPENROAD tool, execute the following commands to read the LEF and DEF files:  
@@ -859,12 +859,58 @@ from the folder
 
 
 
+## Lab steps to execute OpenSTA with right timing libraries and CTS assignment:<a name  ="48">  
+•	To remove sky130_fd_sc_hd__clkbuf_1 from the list - `set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]`  
+
+•	To check the current value of CTS_CLK_BUFFER_LIST  - `echo $::env(CTS_CLK_BUFFER_LIST)`  
+
+•	To check the current value of CURRENT_DEF - `echo $::env(CURRENT_DEF)`  
+
+•	To set def as placement def - `set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/22-04_09-27/results/placement/picorv32a.placement.def`  
+
+•	To run cts - `run_cts`  
+
+•	To check the current value of CTS_CLK_BUFFER_LIST - `echo $::env(CTS_CLK_BUFFER_LIST)`  
+
+### Lab steps to observe impact of bigger CTS buffers on setup and hold timing :  
+
+•	Now, we'll follow the same commands we used earlier to run Openroad.  
+
+`openroad`  
+`read_lef /openLANE_flow/designs/picorv32a/runs/22-04_09-27/tmp/merged.lef`  
+`read_def /openLANE_flow/designs/picorv32a/runs/22-04_09-27/results/cts/picorv32a.cts.def`  
+`write_db pico_cts1.db`  
+`read_db pico_cts.db`  
+`read_verilog /openLANE_flow/designs/picorv32a/runs/22-04_09-27/results/synthesis/picorv32a.synthesis_cts.v`  
+`read_liberty $::env(LIB_SYNTH_COMPLETE)`  
+`link_design picorv32a`  
+`read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc`  
+`set_propagated_clock [all_clocks]`  
+`report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4`  
+`report_clock_skew -hold`  
+`report_clock_skew -setup`  
+`exit`  
+
+![]()  
+
+![]()  
+
+![]()  
+
+![]()  
+
+![]()  
+
+![]()  
+
+![]()  
+
+![]()  
+
+![]()  
 
 
 
-
-
-## Lab steps to execute OpenSTA with right timing libraries and CTS assignment:<a name  ="48">
 
 
                            
