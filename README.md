@@ -981,9 +981,9 @@ The results of the routing are stored in the directory
 ![VirtualBox_vsdworkshop_23_04_2024_23_17_26.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_17_26.png)  
 
 
--The next step involves post-routing STA analysis, which necessitates the extraction of parasitic effects (SPEF). Since OpenLANE lacks a SPEF extraction tool, this task must be performed externally.  
+- The next step involves post-routing STA analysis, which necessitates the extraction of parasitic effects (SPEF). Since OpenLANE lacks a SPEF extraction tool, this task must be performed externally.  
 
--The resulting .spef file can be found in the routing folder within the results directory.    
+- The resulting .spef file can be found in the routing folder within the results directory.    
 
 
 ![VirtualBox_vsdworkshop_23_04_2024_23_18_53%20routing%20doc.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_18_53%20routing%20doc.png)   
