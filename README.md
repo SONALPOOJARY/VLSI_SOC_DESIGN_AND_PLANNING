@@ -666,13 +666,22 @@ from the folder
 
 ![]()  
 
-Now, we'll create a new file named "my_base.sdc" in the "openlane/designs/picorv32a/src" directory. We'll copy the content from the "base.sdc" file and make the necessary edits as shown below.
+•	Now, we'll create a new file named "my_base.sdc" in the "openlane/designs/picorv32a/src" directory. We'll copy the content from the "base.sdc" file and make the necessary edits as shown below.
 
 
+![]()  
 
 
+•	Then we execute the command sta pre_sta.conf , then we get the result as below
 
 
+![]()  
+
+
+![]()
+
+
+![]()
 
 
 
