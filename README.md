@@ -487,28 +487,31 @@ For further details, refer to the track file located at:
 
 ![VirtualBox_vsdworkshop_22_04_2024_10_33_26.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_33_26.png)
 
-•	During the routing stage, tracks act as guides for routing metal layers such as metal 1, metal 2, etc.
-•	Automated Place and Route (PNR) necessitates specifying routing paths, which are determined by tracks. Each track is positioned at coordinates (0.23, 0.46)um horizontally and (0.17, 0.34)um vertically for li1, metal 1, and metal 2 layers.
-•	
-•	In the layout, ports are located on the li1 layer. To ensure that ports align with the intersection of tracks, we need to convert the grid into tracks.
-•	To achieve this, we'll first open the tracks file and then access the tkcon window to execute the "help grid" command.
+•	During the routing stage, tracks act as guides for routing metal layers such as metal 1, metal 2, etc.  
+•	Automated Place and Route (PNR) necessitates specifying routing paths, which are determined by tracks. Each track is positioned at coordinates (0.23, 0.46)um horizontally and (0.17, 0.34)um vertically for li1, metal 1, and metal 2 layers.  
+•	In the layout, ports are located on the li1 layer. To ensure that ports align with the intersection of tracks, we need to convert the grid into tracks.  
+•	To achieve this, we'll first open the tracks file and then access the tkcon window to execute the "help grid" command.  
 
 ![VirtualBox_vsdworkshop_22_04_2024_10_44_08.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_44_08.png)
 
 
+
 ![VirtualBox_vsdworkshop_22_04_2024_10_46_53.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_46_53.png)
 
+•	To extract the `sky130_inv.lef` and `sky130_vsdinv.mag` files, execute the command `lef write`  
 
-![VirtualBox_vsdworkshop_22_04_2024_10_56_18.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_56_18.png)
+![VirtualBox_vsdworkshop_22_04_2024_10_56_18.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_56_18.png)  
 
+•	Then we have to copy the file `sky130_vsdinv.mag` to `src` folder of `picorv32a`, then we can verify the files using the command `ls -ltr`  
 
 ![VirtualBox_vsdworkshop_22_04_2024_11_00_37.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_00_37.png)
 
+•	Make some changes / edit the `config.tcl` file  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_07_50.png)
+![VirtualBox_vsdworkshop_22_04_2024_11_07_50.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_07_50.png)
 
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_08_02.png)
+![VirtualBox_vsdworkshop_22_04_2024_11_08_02.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_08_02.png)
 
 
 ![CONFIG.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/CONFIG.png)
