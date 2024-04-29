@@ -928,41 +928,69 @@ from the folder
 `prep -design picorv32a -tag 22-04_09-27`  
 `echo $::env(CURRENT_DEF)`  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_14_55_56%20day_51lab.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_14_55_56%20day_51lab.png)  
 
 •	Before proceeding to routing, we need to generate the power distribution network by executing the command `gen_pdn`  
 
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_15_01_53%20day_513.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_15_01_53%20day_513.png)  
 
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_15_02_37%20day_5pdngeenration.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_15_02_37%20day_5pdngeenration.png)  
 
 
 •	After generating the power distribution network, we can proceed to routing by executing the command `run_routing`. This process may take some time.  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_15_41_35%20routing%20process.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_15_41_35%20routing%20process.png)  
 
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_15_51_51%20routing%20completed.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_15_51_51%20routing%20completed.png)  
 
 
-•	You'll notice that routing takes around 55 minutes and 59 seconds to complete. The results of the routing are stored in the directory  
+•	You'll notice that routing takes around 55 minutes and 59 seconds to complete.  
+
+
+
+
+### Routing topology algorithm and final files list post-route  
+
+![]()
+
+
+-The algorithm requires the determination of the cost associated with each APC and the calculation of the minimum spanning tree between the APCs to find the optimal points between two APCs.  
+
+
+
+The results of the routing are stored in the directory  
 
 `/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-04_09-27/results/routing`  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_23_06_24%20routing%20files.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_06_24%20routing%20files.png)  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_23_20_17%20final%20routing%20magic%20t%20command.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_20_17%20final%20routing%20magic%20t%20command.png)  
+
+
 
 
 
 •	Take a Sceernshot after the routing process is done.  
 
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_23_17_26.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_17_26.png)  
 
-![]()  
+
+-The next step involves post-routing STA analysis, which necessitates the extraction of parasitic effects (SPEF). Since OpenLANE lacks a SPEF extraction tool, this task must be performed externally.  
+
+-The resulting .spef file can be found in the routing folder within the results directory.    
+
+
+![]()   
+
+
+- FINAL GENERATED LAYOUT  
+
+   
+![VirtualBox_vsdworkshop_23_04_2024_23_19_38%20%20%20_%20final%20routing.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_19_38%20%20%20_%20final%20routing.png)  
 
 
 
