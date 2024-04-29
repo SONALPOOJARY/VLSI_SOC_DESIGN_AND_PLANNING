@@ -966,6 +966,9 @@ The results of the routing are stored in the directory
 
 ![VirtualBox_vsdworkshop_23_04_2024_23_06_24%20routing%20files.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_06_24%20routing%20files.png)  
 
+
+- magic -T command for routing  
+
 ![VirtualBox_vsdworkshop_23_04_2024_23_20_17%20final%20routing%20magic%20t%20command.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_20_17%20final%20routing%20magic%20t%20command.png)  
 
 
