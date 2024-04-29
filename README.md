@@ -28,9 +28,9 @@
 •	[Lab steps to do basic timing ECO](#45)  
 •	[Lab steps to run CTS using Triton](#46)  
 •	[Lab steps to verify CTS runs](#47)  
-•	[Lab steps to execute OpenSTA with right timing libraries and CTS assignment](#48)  
+•	[Lab steps to execute OpenSTA with right timing libraries and CTS assignment](#48)
 
-[Day 5:](#day5)  
+ 5. [Day 5:](#day5)  
 •	[Final step for RTL2GDS using tritinRoute and openSTA](#51) 
 
 
@@ -802,13 +802,13 @@ from the folder
 
  - Lets see the `cts.tcl` file  
 
- ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_11_39.png)  
+ ![VirtualBox_vsdworkshop_23_04_2024_10_11_39.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_11_39.png)  
 
- ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_19_08.png)  
+ !VirtualBox_vsdworkshop_23_04_2024_10_19_08.png[](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_19_08.png)  
 
 •	In Openroad , observe that it does not contain a synthesis file.  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
+![openroad%20files.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
 
  
 
@@ -818,7 +818,7 @@ from the folder
 2.Launch the OPENROAD tool by entering the command: openroad inside the openlane floor.  
 
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20command%20in%20openlane.png) 
+![openroad%20command%20in%20openlane.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20command%20in%20openlane.png) 
 
 
 - Once inside the OPENROAD tool, execute the following commands to read the LEF and DEF files:  
@@ -829,11 +829,11 @@ from the folder
  `write_db pico_cts.db`
 
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read_lef%20and%20def.png)  
+![read_lef%20and%20def.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read_lef%20and%20def.png)  
 
 - we  can  read the `db` file using the command `read_db pico_cts.db`
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20db.png)
+![read%20db.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20db.png)
 
 ## To read the netlist post CTS :  
 
@@ -847,15 +847,15 @@ from the folder
 •	Finally, to exit from the OpenROAD flow and return to the OpenLANE flow, type "exit".  
   
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20sdc.png)
+![read%20sdc.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20sdc.png)
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/to%20read%20the%20lib%20for%20design.png)  
+![to%20read%20the%20lib%20for%20design.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/to%20read%20the%20lib%20for%20design.png)  
 
 - The results of the report  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/slack%20met.png)  
+![slack%20met.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/slack%20met.png)  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/result%20of%20the%20report%20cheks.png)  
+![result%20of%20the%20report%20cheks.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/result%20of%20the%20report%20cheks.png)  
 
 
 
@@ -891,23 +891,79 @@ from the folder
 `report_clock_skew -setup`  
 `exit`  
 
+![before%20run%20cts.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/before%20run%20cts.png)  
+
+![run%20cts.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/run%20cts.png)  
+
+![run%20cts%20final%20result.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/run%20cts%20final%20result.png)  
+
+![echo%20cts.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/echo%20cts.png)  
+
+![cts%20echo.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/cts%20echo.png)  
+
+![one%20more%20cts%20run.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/one%20more%20cts%20run.png)  
+
+![VirtualBox_vsdworkshop_23_04_2024_12_44_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_12_44_42.png)  
+
+![VirtualBox_vsdworkshop_23_04_2024_12_46_44.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_12_46_44.png)  
+
+![VirtualBox_vsdworkshop_23_04_2024_12_59_13.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_12_59_13.png)  
+
+![result%20of%20the%20report%20cheks.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/result%20of%20the%20report%20cheks.png)  
+
+![VirtualBox_vsdworkshop_23_04_2024_13_10_57%20%20day4%20final.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_13_10_57%20%20day4%20final.png)  </a>
+
+
+# Day5:<a name ="day5">   </a>  
+
+## Final step for RTL2GDS using tritinRoute and openSTA:<a name  ="51">  
+
+•	To continue, we need to open OpenLANE and prepare the previous run without overwriting the config file.  
+
+
+`docker`  
+
+`./flow.tcl -interactive`  
+`package require openlane 0.9`  
+`prep -design picorv32a -tag 22-04_09-27`  
+`echo $::env(CURRENT_DEF)`  
+
 ![]()  
+
+•	Before proceeding to routing, we need to generate the power distribution network by executing the command `gen_pdn`  
+
+
+![]()  
+
+
+![]()  
+
+
+•	After generating the power distribution network, we can proceed to routing by executing the command `run_routing`. This process may take some time.  
+
+![]()  
+
+
+![]()  
+
+
+•	You'll notice that routing takes around 55 minutes and 59 seconds to complete. The results of the routing are stored in the directory  
+
+`/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-04_09-27/results/routing`  
 
 ![]()  
 
 ![]()  
 
-![]()  
+
+
+•	Take a Sceernshot after the routing process is done.  
+
 
 ![]()  
 
 ![]()  
 
-![]()  
-
-![]()  
-
-![]()  
 
 
 
