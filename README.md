@@ -808,14 +808,17 @@ from the folder
 
 •	In Openroad , observe that it does not contain a synthesis file.  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
+
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20command%20in%20openlane.png)  
 
 -To create a database in OPENROAD using LEF and TMP files, follow these steps:
-1.Ensure that you are in the directory containing the LEF and TMP files.
+1.Ensure that you are in the directory containing the LEF and TMP files.  
 
-2.Launch the OPENROAD tool by entering the command: openroad inside the openlane floor  
+2.Launch the OPENROAD tool by entering the command: openroad inside the openlane floor.  
 
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read_lef%20and%20def.png)  
+
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
+
 
 
 - Once inside the OPENROAD tool, execute the following commands to read the LEF and DEF files:  
@@ -826,11 +829,11 @@ from the folder
  `write_db pico_cts.db`
 
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read_lef%20and%20def.png)  
 
-- we have canr read the `db` file using the command `read_db pico_cts.db`
+- we  can  read the `db` file using the command `read_db pico_cts.db`
 
-  ![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20db.png)
 
 ## To read the netlist post CTS :  
 
@@ -842,14 +845,13 @@ from the folder
 •	Set all clocks as propagated clocks by executing "set_propagated_clock [all_clocks]".  
 •	Generate a custom timing report using the command "report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4".  
 •	Finally, to exit from the OpenROAD flow and return to the OpenLANE flow, type "exit".  
-
-![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20db.png)  
+  
 
 ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20sdc.png)
 
 ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/to%20read%20the%20lib%20for%20design.png)  
 
-- The results of the report
+- The results of the report  
 
 ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/slack%20met.png)  
 
