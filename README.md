@@ -502,22 +502,31 @@ For further details, refer to the track file located at:
 
 ![VirtualBox_vsdworkshop_22_04_2024_10_56_18.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_56_18.png)  
 
+•	To extract the `sky130_inv.lef` and `sky130_vsdinv.mag` files, execute the command `lef write`  
+
+![VirtualBox_vsdworkshop_22_04_2024_11_00_37.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_00_37.png)  
+
   
 
-![VirtualBox_vsdworkshop_22_04_2024_11_00_37.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_00_37.png)
+![VirtualBox_vsdworkshop_22_04_2024_11_07_50.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_07_50.png)  
 
-  
+•	Then we have to copy the file `sky130_vsdinv.mag` to `src` folder of `picorv32a`, then we can verify the files using the command `ls -ltr`  
 
-![VirtualBox_vsdworkshop_22_04_2024_11_07_50.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_07_50.png)
+![VirtualBox_vsdworkshop_22_04_2024_11_08_02.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_08_02.png)  
 
-•	Then we have to copy the file `sky130_vsdinv.mag` to `src` folder of `picorv32a`, then we can verify the files using the command `ls -ltr`
+•	Make some changes / edit the `config.tcl` file  
 
-![VirtualBox_vsdworkshop_22_04_2024_11_08_02.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_08_02.png)
+![CONFIG.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/CONFIG.png)  
 
-•	Make some changes / edit the `config.tcl` file
 
-![CONFIG.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/CONFIG.png)
+•	Now we will navigate to the OpenLANE directory and execute the Docker command. We'll run the following commands consecutively.  
 
+`./flow.tcl -interactive  
+package require openlane 0.9  
+prep -design picorv32a  
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]     
+add_lefs -src $lefs  
+run_synthesis`  
 
 ![VirtualBox_vsdworkshop_22_04_2024_11_51_08.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_51_08.png)
 
