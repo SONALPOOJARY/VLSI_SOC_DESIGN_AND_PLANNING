@@ -498,21 +498,23 @@ For further details, refer to the track file located at:
 
 ![VirtualBox_vsdworkshop_22_04_2024_10_46_53.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_46_53.png)
 
-•	To extract the `sky130_inv.lef` and `sky130_vsdinv.mag` files, execute the command `lef write`  
+  
 
 ![VirtualBox_vsdworkshop_22_04_2024_10_56_18.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_10_56_18.png)  
 
-•	Then we have to copy the file `sky130_vsdinv.mag` to `src` folder of `picorv32a`, then we can verify the files using the command `ls -ltr`  
+  
 
 ![VirtualBox_vsdworkshop_22_04_2024_11_00_37.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_00_37.png)
 
-•	Make some changes / edit the `config.tcl` file  
+  
 
 ![VirtualBox_vsdworkshop_22_04_2024_11_07_50.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_07_50.png)
 
+•	Then we have to copy the file `sky130_vsdinv.mag` to `src` folder of `picorv32a`, then we can verify the files using the command `ls -ltr`
 
 ![VirtualBox_vsdworkshop_22_04_2024_11_08_02.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_08_02.png)
 
+•	Make some changes / edit the `config.tcl` file
 
 ![CONFIG.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/CONFIG.png)
 
