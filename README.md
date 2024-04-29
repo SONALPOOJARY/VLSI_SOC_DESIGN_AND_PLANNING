@@ -660,49 +660,78 @@ from the folder
 `set ::env(SYNTH_SIZING) 1`  
 `run_synthesis`  
 
-![]()  
+![VirtualBox_vsdworkshop_22_04_2024_22_24_21.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_22_24_21.png)  
 
 •	Now we have to make a new `pre_sta.conf file`. We can do this by vim editor . We store this `pre_sta.conf` file in `openlane` folder.  
 
-![]()  
+![VirtualBox_vsdworkshop_29_04_2024_01_14_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_29_04_2024_01_14_42.png)  
 
 •	Now, we'll create a new file named "my_base.sdc" in the "openlane/designs/picorv32a/src" directory. We'll copy the content from the "base.sdc" file and make the necessary edits as shown below.
 
 
-![]()  
+![VirtualBox_vsdworkshop_29_04_2024_01_15_09.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_29_04_2024_01_15_09.png)  
 
 
 •	Then we execute the command sta pre_sta.conf , then we get the result as below
 
 
+![VirtualBox_vsdworkshop_22_04_2024_21_54_29.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_21_54_29.png)  
+
+
+![VirtualBox_vsdworkshop_22_04_2024_23_02_25.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_25.png)  
+
+
+![VirtualBox_vsdworkshop_22_04_2024_23_02_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_48.png)  </a>  
+
+
+
+
+## Lab steps to optimize synthesis to reduce setup violations:<a name  ="44">  
+
+•	Next, we'll increase the fanout and re-synthesize the circuit by executing the following commands.  
+
+`prep -design picorv32a -tag 02-04_05-27 -overwrite`  
+`set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`  
+`add_lefs -src $lefs`  
+`set ::env(SYNTH_SIZING) 1`  
+`set ::env(SYNTH_MAX_FANOUT) 4`  
+`echo $::env(SYNTH_DRIVING_CELL)`  
+`run_synthesis`  
+
+![VirtualBox_vsdworkshop_22_04_2024_22_24_21.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_22_24_21.png)  
+
+
+•	Now run the command `sta pre_sta.conf` .  
+
+![VirtualBox_vsdworkshop_22_04_2024_21_54_29.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_21_54_29.png)  
+
+![VirtualBox_vsdworkshop_22_04_2024_23_02_25.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_25.png)  
+
+
+![VirtualBox_vsdworkshop_22_04_2024_23_02_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_48.png)  </a>
+
+
+
+
+
+## Lab steps to do basic timing ECO:<a name  ="45">  
+
+•	To report all the connections to a net, use the command `report_net -connections _11672_`  
+•	To check the command syntax help for replacing a cell, use `replace_cell -help`  
+•	To replace the cell with ID "_14510_" with "sky130_fd_sc_hd__or3_4", execute `replace_cell _14510_ sky130_fd_sc_hd__or3_4`  
+•	To generate a custom timing report with fields "net cap slew input_pins" and four digits, use `report_checks -fields {net cap slew input_pins} -digits 4`  
+
 ![]()  
 
+![]()  
 
-![]()
+![VirtualBox_vsdworkshop_22_04_2024_23_02_25.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_25.png)  
 
-
-![]()
-
-
+![VirtualBox_vsdworkshop_22_04_2024_23_02_48.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_23_02_48.png)  
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-## Lab steps to optimize synthesis to reduce setup violations:<a name  ="44">
-
-
-## Lab steps to do basic timing ECO:<a name  ="45">
 
 
 ## Lab steps to run CTS using Triton:<a name  ="46">
