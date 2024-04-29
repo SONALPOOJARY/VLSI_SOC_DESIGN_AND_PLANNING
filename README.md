@@ -619,40 +619,29 @@ For further details, refer to the track file located at:
 ![VirtualBox_vsdworkshop_22_04_2024_13_34_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_34_32.png)  
 
 
+-Floorplan run is successsful.  
+
+![VirtualBox_vsdworkshop_22_04_2024_14_07_57.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_07_57.png)  
 
 
-![VirtualBox_vsdworkshop_22_04_2024_14_07_57.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_07_57.png)
+•	We can view the floor plan by executing the command :  
+`magic -T/home/vsduser/Desktop/work/tools/openlane_workingdir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def`   from the folder 
+ `/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-04_17-25/results/placement`.  
 
-![VirtualBox_vsdworkshop_22_04_2024_14_08_51.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_08_51.png)
-
-![VirtualBox_vsdworkshop_22_04_2024_14_10_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_10_42.png)
-
-![VirtualBox_vsdworkshop_22_04_2024_14_14_13.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_14_13.png)
+- Output is shown below
 
 
+![VirtualBox_vsdworkshop_22_04_2024_14_08_51.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_08_51.png)  
 
 
+- We can zoom-in to see the layouts
 
 
-
-
-
-
-
-
-
+![VirtualBox_vsdworkshop_22_04_2024_14_10_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_10_42.png)  
 
 
 
-
-
-
-
-
-
-
-
-
+![VirtualBox_vsdworkshop_22_04_2024_14_14_13.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_14_13.png)  </a>
 
 
 
