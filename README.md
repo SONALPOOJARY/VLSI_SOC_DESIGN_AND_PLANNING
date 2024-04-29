@@ -14,7 +14,6 @@
 
 
 3. [Day3:](#day3)  
-
 •	[Lab introduction to Sky130 basic layers layout and LEF using inverted](#31)  
 •	[Lab steps to create std cell layout and extract spice netlist](#32)  
 •	[Lab introduction to Magic tool options and DRC rules](#33)  
@@ -22,7 +21,6 @@
 •	[Lab exercise to fix poly.9 error in Sky130 tech-file](#35)  
 
  4. [Day4:](#day4)  
-
 •	[Pre-layout timing analysis and importance of good clock tree](#41)  
 •	[Lab steps to configure synthesis settings to fix slack and include vsdinv](#42)  
 •	[Lab steps to configure OpenSTA for post-synth timing analysis](#43)   
@@ -33,7 +31,6 @@
 •	[Lab steps to execute OpenSTA with right timing libraries and CTS assignment](#48)  
 
 [Day 5:](#day5)  
-
 •	[Final step for RTL2GDS using tritinRoute and openSTA](#51) 
 
 
@@ -550,7 +547,37 @@ For further details, refer to the track file located at:
 
 
 
-## Lab steps to configure synthesis settings to fix slack and include vsdinv:<a name  ="42">
+## Lab steps to configure synthesis settings to fix slack and include vsdinv:<a name  ="42">  
+
+•	We'll check the README file and make changes to the OpenLANE settings accordingly.  
+
+
+
+
+•	We can configure environment parameters by running the following command.  
+
+`prep -design picorv32a -tag 01-04_12-54 -overwrite`  
+
+`set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`  
+
+`add_lefs -src $lefs`  
+
+`echo $::env(SYNTH_STRATEGY)`  
+
+`set ::env(SYNTH_STRATEGY) "DELAY 3"`  
+
+`echo $::env(SYNTH_BUFFERING)`  
+
+`echo $::env(SYNTH_SIZING)`  
+
+`set ::env(SYNTH_SIZING) 1`  
+
+`echo $::env(SYNTH_DRIVING_CELL)`  
+
+`run_synthesis`  
+
+`prep -design picorv32a -tag 01-04_12-54 -overwrite`
+
 
 
 
