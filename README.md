@@ -800,7 +800,7 @@ from the folder
 
  ![tcl%20commands.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/tcl%20commands.png)  
 
- - Lets see the `ctc.tcl` file  
+ - Lets see the `cts.tcl` file  
 
  ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_11_39.png)  
 
