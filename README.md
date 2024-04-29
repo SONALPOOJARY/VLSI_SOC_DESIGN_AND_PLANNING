@@ -606,16 +606,19 @@ For further details, refer to the track file located at:
 
 
 
-![VirtualBox_vsdworkshop_22_04_2024_13_33_21.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_21.png)
+![VirtualBox_vsdworkshop_22_04_2024_13_33_21.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_21.png)  
 
 
-![VirtualBox_vsdworkshop_22_04_2024_13_33_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_40.png)
+![VirtualBox_vsdworkshop_22_04_2024_13_33_40.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_40.png)  
 
 
-![VirtualBox_vsdworkshop_22_04_2024_13_33_59.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_59.png)
+![VirtualBox_vsdworkshop_22_04_2024_13_33_59.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_59.png)  
+
+- Now we can proceed with the floorplan by using the command `run_floorplan`.  
+
+![VirtualBox_vsdworkshop_22_04_2024_13_34_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_34_32.png)  
 
 
-![VirtualBox_vsdworkshop_22_04_2024_13_34_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_34_32.png)
 
 
 ![VirtualBox_vsdworkshop_22_04_2024_14_07_57.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_14_07_57.png)
