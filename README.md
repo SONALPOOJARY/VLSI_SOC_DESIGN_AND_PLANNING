@@ -584,16 +584,26 @@ For further details, refer to the track file located at:
 `wns(worst negative slack)= -23.89`  
 `tns(total negative slack)= -711.59`  
 
-•	After making the settings changes, we'll rerun the synthesis by executing the command `run_synthesi`.  
+•	After making the settings changes, we'll rerun the synthesis by executing the command `run_synthesis`.  
 
 
 ![VirtualBox_vsdworkshop_22_04_2024_13_28_49.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_28_49.png)  
 
-•	Now we execute the `run_floorplan` command
+- Synthesis successfully executed.  
 
-![VirtualBox_vsdworkshop_22_04_2024_13_30_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_30_32.png)
+![VirtualBox_vsdworkshop_22_04_2024_13_30_32.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_30_32.png)  
+
+•	Now we execute the `run_floorplan` command.  
 
 ![VirtualBox_vsdworkshop_22_04_2024_13_32_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_32_45.png)
+
+•	Since we encountered errors, we need to execute the following command to rectify them for the floorplan.  
+
+
+`init_floorplan`  
+`place_io`  
+`tap_decap_or`  
+
 
 
 ![VirtualBox_vsdworkshop_22_04_2024_13_33_21.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_33_21.png)
