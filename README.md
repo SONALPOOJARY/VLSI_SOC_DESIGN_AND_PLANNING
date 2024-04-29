@@ -521,58 +521,59 @@ For further details, refer to the track file located at:
 
 •	Now we will navigate to the OpenLANE directory and execute the Docker command. We'll run the following commands consecutively.  
 
-`./flow.tcl -interactive  
-package require openlane 0.9  
-prep -design picorv32a  
-set lefs [glob $::env(DESIGN_DIR)/src/*.lef]     
-add_lefs -src $lefs  
-run_synthesis`  
+`./flow.tcl -interactive`  
 
-![VirtualBox_vsdworkshop_22_04_2024_11_51_08.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_51_08.png)
+`package require openlane 0.9` 
 
+`prep -design picorv32a`  
 
-![VirtualBox_vsdworkshop_22_04_2024_12_56_00.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_12_56_00.png)
+`set lefs [glob $::env(DESIGN_DIR)/src/*.lef]` 
 
+`add_lefs -src $lefs`  
 
-![VirtualBox_vsdworkshop_22_04_2024_13_01_52.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_01_52.png)
+`run_synthesis`  
 
 
-![VirtualBox_vsdworkshop_22_04_2024_13_03_49.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_03_49.png)
+![VirtualBox_vsdworkshop_22_04_2024_11_51_08.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_11_51_08.png)  
 
 
+![VirtualBox_vsdworkshop_22_04_2024_12_56_00.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_12_56_00.png)  
 
 
+![VirtualBox_vsdworkshop_22_04_2024_13_01_52.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_01_52.png)  
 
 
+•	The synthesis was successfully executed.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![VirtualBox_vsdworkshop_22_04_2024_13_03_49.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_22_04_2024_13_03_49.png)  </a>
 
 
 
 
 ## Lab steps to configure synthesis settings to fix slack and include vsdinv:<a name  ="42">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Lab steps to configure OpenSTA for post-synth timing analysis:<a name  ="43">
