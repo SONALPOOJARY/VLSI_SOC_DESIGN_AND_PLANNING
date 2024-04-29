@@ -576,7 +576,18 @@ For further details, refer to the track file located at:
 
 `run_synthesis`  
 
-`prep -design picorv32a -tag 01-04_12-54 -overwrite`
+`prep -design picorv32a -tag 01-04_12-54 -overwrite`  
+
+
+
+•	In the previous run we have observed the negative slack value  
+
+`wns(worst negative slack)= -23.89`  
+`tns(total negative slack)= -711.59`  
+
+•	After making the settings changes, we'll rerun the synthesis by executing the command `run_synthesi`.  
+
+
 
 
 
