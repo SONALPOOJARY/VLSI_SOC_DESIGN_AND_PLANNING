@@ -798,24 +798,24 @@ from the folder
 •	We are using all these atomic commands like run_synthesis ,run_floorplan and etc.., are these are stores in 
  `/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/scripts/tcl_commands` . This folder contains.  
 
- ![]()  
+ ![tcl%20commands.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/tcl%20commands.png)  
 
  - Lets see the `ctc.tcl` file  
 
- ![]()  
+ ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_11_39.png)  
 
- ![]()  
+ ![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_10_19_08.png)  
 
 •	In Openroad , observe that it does not contain a synthesis file.  
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/openroad%20files.png)  
 
 -To create a database in OPENROAD using LEF and TMP files, follow these steps:
 1.Ensure that you are in the directory containing the LEF and TMP files.
 
 2.Launch the OPENROAD tool by entering the command: openroad inside the openlane floor  
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read_lef%20and%20def.png)  
 
 
 - Once inside the OPENROAD tool, execute the following commands to read the LEF and DEF files:  
@@ -830,7 +830,7 @@ from the folder
 
 - we have canr read the `db` file using the command `read_db pico_cts.db`
 
-![]()  
+  ![]()  
 
 ## To read the netlist post CTS :  
 
@@ -843,17 +843,17 @@ from the folder
 •	Generate a custom timing report using the command "report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4".  
 •	Finally, to exit from the OpenROAD flow and return to the OpenLANE flow, type "exit".  
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20db.png)  
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/read%20sdc.png)
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/to%20read%20the%20lib%20for%20design.png)  
 
 - The results of the report
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/slack%20met.png)  
 
-![]()  
+![](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/result%20of%20the%20report%20cheks.png)  
 
 
 
