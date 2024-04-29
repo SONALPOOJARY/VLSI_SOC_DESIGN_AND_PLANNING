@@ -734,13 +734,14 @@ from the folder
 
 ## Lab steps to run CTS using Triton:<a name  ="46">  
 
+
 •	Now, after making changes, we'll write the Verilog file using the command "write_verilog", and the file will be located in  
 
 `/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/22-04_09-27/results/synthesis/picorv32a.synthesis.v`  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_14_45.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_14_45.png)  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_21_00.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_21_00.png)  
 
 
 •	Now, we won't redo the synthesis to avoid clearing our modifications. Instead, we'll continue from the floor plan stage. To run the floor plan, we'll proceed by executing the following commands.  
@@ -758,39 +759,107 @@ from the folder
    `# Incase getting error will use this command    
    unset ::env(LIB_CTS)`  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_34_42.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_34_42.png)  
 
-![]()  
-
-
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_35_59.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_35_59.png)  
 
 
+![VirtualBox_vsdworkshop_23_04_2024_09_36_19.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_36_19.png)  
 
-![]()  
 
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_37_16.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_37_16.png)  
+
+
+![VirtualBox_vsdworkshop_23_04_2024_09_37_57.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_37_57.png)  
 
 - Finally we run the command `run_cts`  
 
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_38_33.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_38_33.png)  
 
 
-- After successful execution of the command, it will generate the` picorv32a.cts.def` file. This file will be used for power planning and further steps.
+- After successful execution of the command, it will generate the` picorv32a.cts.def` file. This file will be used for power planning and further steps.  
+
+
+![VirtualBox_vsdworkshop_23_04_2024_09_52_01.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_52_01.png)
 
 - magic -T output
   
-![]()  
+![VirtualBox_vsdworkshop_23_04_2024_09_53_39.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_09_53_39.png)  
 
 
 - Output in color 
-![]()  </a>
+![VirtualBox_vsdworkshop_23_04_2024_23_40_52%20cts%20colour%20output.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_40_52%20cts%20colour%20output.png)  </a>
+
+
+
+## Lab steps to verify CTS runs:<a name  ="47">  
+
+•	We are using all these atomic commands like run_synthesis ,run_floorplan and etc.., are these are stores in 
+ `/home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/scripts/tcl_commands` . This folder contains.  
+
+ ![]()  
+
+ - Lets see the `ctc.tcl` file  
+
+ ![]()  
+
+ ![]()  
+
+•	In Openroad , observe that it does not contain a synthesis file.  
+
+![]()  
+
+-To create a database in OPENROAD using LEF and TMP files, follow these steps:
+1.Ensure that you are in the directory containing the LEF and TMP files.
+
+2.Launch the OPENROAD tool by entering the command: openroad inside the openlane floor  
+
+![]()  
+
+
+- Once inside the OPENROAD tool, execute the following commands to read the LEF and DEF files:  
+`read_lef /openLANE_flow/designs/picorv32a/runs/22-04_09-27/tmp/merged.lef`  
+`read_def /openLANE_flow/designs/picorv32a/runs/22-04_09-27/results/cts/picorv32a.cts.def`  
+
+- To create the OpenROAD database file named pico_cts.db, use the command:  
+ `write_db pico_cts.db`
+
+
+![]()  
+
+- we have canr read the `db` file using the command `read_db pico_cts.db`
+
+![]()  
+
+## To read the netlist post CTS :  
+
+`read_verilog /openLANE_flow/designs/picorv32a/runs/22-04_09-27/results/synthesis/picorv32a.synthesis_cts.v`  
+
+•	To read the library for the design, use the command "read_liberty $::env(LIB_SYNTH_COMPLETE)".  
+•	Next, link the design and library with "link_design picorv32a".  
+•	Then, read the custom SDC we created with "read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc".  
+•	Set all clocks as propagated clocks by executing "set_propagated_clock [all_clocks]".  
+•	Generate a custom timing report using the command "report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4".  
+•	Finally, to exit from the OpenROAD flow and return to the OpenLANE flow, type "exit".  
+
+![]()  
+
+![]()  
+
+![]()  
+
+- The results of the report
+
+![]()  
+
+![]()  
 
 
 
 
-## Lab steps to verify CTS runs:<a name  ="47">
+
+
 
 
 ## Lab steps to execute OpenSTA with right timing libraries and CTS assignment:<a name  ="48">
