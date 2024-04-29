@@ -625,7 +625,8 @@ For further details, refer to the track file located at:
 
 
 •	We can view the floor plan by executing the command :  
-`magic -T/home/vsduser/Desktop/work/tools/openlane_workingdir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def`   from the folder 
+`magic -T/home/vsduser/Desktop/work/tools/openlane_workingdir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def`  
+from the folder   
  `/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-04_17-25/results/placement`.  
 
 - Output is shown below
@@ -646,8 +647,47 @@ For further details, refer to the track file located at:
 
 
 
-
 ## Lab steps to configure OpenSTA for post-synth timing analysis:<a name  ="43">
+
+•	To conduct STA analysis and identify timing issues, we'll start by running synthesis. Use the following commands in the OpenLANE directory.
+
+`docker`  
+`./flow.tcl -interactive`  
+`package require openlane 0.9`  
+`prep -design picorv32a`  
+`set lefs [glob $::env(DESIGN_DIR)/src/*.lef]`  
+`add_lefs -src $lefs`  
+`set ::env(SYNTH_SIZING) 1`  
+`run_synthesis`  
+
+![]()  
+
+•	Now we have to make a new `pre_sta.conf file`. We can do this by vim editor . We store this `pre_sta.conf` file in `openlane` folder.  
+
+![]()  
+
+Now, we'll create a new file named "my_base.sdc" in the "openlane/designs/picorv32a/src" directory. We'll copy the content from the "base.sdc" file and make the necessary edits as shown below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Lab steps to optimize synthesis to reduce setup violations:<a name  ="44">
