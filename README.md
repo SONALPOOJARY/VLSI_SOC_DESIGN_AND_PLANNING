@@ -946,12 +946,12 @@ from the folder
 
 ![VirtualBox_vsdworkshop_23_04_2024_15_51_51%20routing%20completed.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_15_51_51%20routing%20completed.png)  
 
-•	You'll notice that routing takes around 55 minutes and 59 seconds to complete.  
+•	You'll notice that routing takes around 55 minutes and 59 seconds to complete.          
 
 
 
 
-### Routing topology algorithm and final files list post-route:  
+## Routing topology algorithm and final files list post-route:  
 
 ![routing%20algorithm.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/routing%20algorithm.png)
 
