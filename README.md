@@ -946,15 +946,14 @@ from the folder
 
 ![VirtualBox_vsdworkshop_23_04_2024_15_51_51%20routing%20completed.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_15_51_51%20routing%20completed.png)  
 
-
 •	You'll notice that routing takes around 55 minutes and 59 seconds to complete.  
 
 
 
 
-### Routing topology algorithm and final files list post-route  
+### Routing topology algorithm and final files list post-route:  
 
-![]()
+![routing%20algorithm.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/routing%20algorithm.png)
 
 
 -The algorithm requires the determination of the cost associated with each APC and the calculation of the minimum spanning tree between the APCs to find the optimal points between two APCs.  
@@ -984,13 +983,12 @@ The results of the routing are stored in the directory
 -The resulting .spef file can be found in the routing folder within the results directory.    
 
 
-![]()   
+![VirtualBox_vsdworkshop_23_04_2024_23_18_53%20routing%20doc.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_18_53%20routing%20doc.png)   
 
 
 - FINAL GENERATED LAYOUT  
 
-   
-![VirtualBox_vsdworkshop_23_04_2024_23_19_38%20%20%20_%20final%20routing.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_19_38%20%20%20_%20final%20routing.png)  
+![VirtualBox_vsdworkshop_23_04_2024_23_19_38%20%20%20_%20final%20routing.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_23_04_2024_23_19_38%20%20%20_%20final%20routing.png)  </a>
 
 
 
