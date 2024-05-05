@@ -360,9 +360,9 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 •	To download and extract the DRC corrections, execute the following commands.  
 
-`$ wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz  
-$ tar xfz drc_tests.tgz  
-$ cd drc_tests`  
+`$ wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz`  
+`$ tar xfz drc_tests.tgz`   
+`$ cd drc_tests`  
 
 ### In the folder created you will find the all the files as listed below:
 
