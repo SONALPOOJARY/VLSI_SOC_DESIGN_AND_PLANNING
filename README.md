@@ -342,7 +342,7 @@ merged_unpadded.lef  picorv32a.floorplan.def  picorv32a.floorplan.def.png`
 
 ![VirtualBox_vsdworkshop_21_04_2024_23_27_24.png](https://github.com/SONALPOOJARY/VLSI_SOC_DESIGN_AND_PLANNING/blob/main/VirtualBox_vsdworkshop_21_04_2024_23_27_24.png)  
 
-###We can calculate various timing parameters from the above graph:  
+### We can calculate various timing parameters from the above graph:  
 
 - Rise time: It is the time taken by the signal to rise from 20% to 80% of its value. Rise time = (2.2489 - 2.1819) = 66.92 picoseconds.  
 
