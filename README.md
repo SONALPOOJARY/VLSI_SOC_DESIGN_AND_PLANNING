@@ -92,6 +92,8 @@ openlane
 
 ### The Design folder have few design.  This includes  
 
+
+```
 designs  
 
 ├── 151  
@@ -137,9 +139,11 @@ designs
 ├── y_dct  
 ├── y_huff  
 └── zipdiv  
+```
 
 ### To demonstrate the functionality of our tools, we have selected the picorv32a project. Below is an overview of the contents of picorv32a.  
 
+```
 picorv32a  
 
 ├── config.tcl  
@@ -151,6 +155,8 @@ picorv32a
 └── src  
     ├── picorv32a.sdc  
     └── picorv32a.v  
+```
+
 
 The `config.tcl` file encompasses comprehensive details about the design, including specifications regarding enrollment, clock period, and relevant port configurations. Settings specified within the config.tcl file take precedence over default configurations within OpenLane, effectively overriding them.  
 
