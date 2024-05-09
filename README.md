@@ -68,7 +68,7 @@ In the Sky130_fd_sc_hd PDK variant, which pertains to the SkyWater foundry's 130
 ## Directory Structure of Openlane:<a name ="13">  
 ### This the directory structure of the openlane  
 
-
+```
 openlane  
 ├── AUTHORS.md  
 ├── clean_runs.tcl  
@@ -87,6 +87,8 @@ openlane
 ├── report_generation_wrapper.py  
 ├── run_designs.py  
 └── scripts  
+```
+
 
 ### The Design folder have few design.  This includes  
 
